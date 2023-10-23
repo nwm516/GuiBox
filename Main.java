@@ -56,7 +56,7 @@ public class Main {
 
         // Randomize Background Color button
         JButton randomColor = new JButton("Randomize Background Color");
-        randomColor.setBounds(50, 400, 200, 30);
+        randomColor.setBounds(45, 400, 210, 30);
         frame.add(randomColor);
 
         // Calculate Volume ActionListener
