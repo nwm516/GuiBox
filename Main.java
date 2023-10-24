@@ -1,6 +1,7 @@
 package org.example;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -15,16 +16,31 @@ public class Main {
 
         // Label creation for length, width, & height
         JLabel lengthLabel = new JLabel("Length");
-        lengthLabel.setBounds(50, 50, 100, 30);
+        lengthLabel.setBounds(52, 50, 100, 30);
         frame.add(lengthLabel);
 
+        JPanel lengthPanel = new JPanel();
+        lengthPanel.setBounds(50, 50, 45, 30);
+        lengthPanel.setBackground(Color.LIGHT_GRAY);
+        frame.add(lengthPanel);
+
         JLabel widthLabel = new JLabel("Width");
-        widthLabel.setBounds(50, 100, 100, 30);
+        widthLabel.setBounds(55, 100, 100, 30);
         frame.add(widthLabel);
 
+        JPanel widthPanel = new JPanel();
+        widthPanel.setBounds(50, 100, 45, 30);
+        widthPanel.setBackground(Color.LIGHT_GRAY);
+        frame.add(widthPanel);
+
         JLabel heightLabel = new JLabel("Height");
-        heightLabel.setBounds(50, 150, 100, 30);
+        heightLabel.setBounds(55, 150, 100, 30);
         frame.add(heightLabel);
+
+        JPanel heightPanel = new JPanel();
+        heightPanel.setBounds(50, 150, 45, 30);
+        heightPanel.setBackground(Color.LIGHT_GRAY);
+        frame.add(heightPanel);
 
         // TextFields creation for each dimension of the box
         JTextField lengthText = new JTextField("Length");
